@@ -1,0 +1,320 @@
+body{
+    background: #f2f2f2;
+}
+.titleBar{padding: 0 15px;}
+.ns-title-wide,
+.ns-title-wide .ns-outer-control {
+    background: #f2f2f2 url(../images/title-bar-bg.jpg) center top no-repeat;
+    float: left;
+    width: 100%;
+}
+.ns-outer-control {
+    width: 996px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 970px;
+    width: 100%;
+}
+.site-main{
+    float: left;
+    width: 100%;
+    /* background-color: #fff; */
+}
+.ns-title-bar {
+    display: table;
+    height: 96px;
+    /* margin-bottom: 30px; */
+}
+
+.ns-title-bar .h1{
+    display: table-cell;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 1.7142857142857142857142857142857rem;
+    line-height: 2.1428571428571428571428571428571rem;
+}
+
+.ns-title-bar .h1 p{
+    line-height: 2.1428571428571428571428571428571rem;
+}
+
+.main-content{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 15px 15px;
+    background: #fff;
+}
+.content-col-main{
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+    padding: 0 10px 0 40px;
+}
+.location-list-outer{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.location-tab-list-box{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.location-list{
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.location-list > li{
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+
+}
+
+.location-list > li > a {
+    display: inline-block;
+    padding: 0;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #1d5799;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.location-list > li > a.active {
+    color: #333;
+}
+.location-list > li > a:hover {
+    text-decoration: underline;
+}
+
+.content-sidebar{
+    float: left;
+    width: 35%;
+}
+.sidebar-inner{
+    float: left;
+    width: 100%;
+}
+
+.sidebar-tab-list{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-tab-list > li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    display: none;
+}
+.sidebar-tab-list > li.active{
+    display: block;
+}
+.sidebar-tab-list > li .location-detail-ind{
+    float: left;
+    width: 100%;
+}
+.location-detail-ind .location-pic{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.location-detail-ind .location-pic > img{
+    display: inline-block;
+    max-width: 100%;
+}
+.location-detail-ind .location-address-box{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.location-detail-ind .location-address-box > h3.location-title, .location-detail-ind > h3.location-title-mobile{
+    font-weight: normal;
+    font-size: 1.7142857142857142857142857142857rem;
+    line-height: 2.1428571428571428571428571428571rem;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.location-detail-ind .location-address-box > p.add-details{
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0 0;
+    padding: 0;
+}
+.location-detail-ind .location-address-box > p.view-map-wrap{
+    margin: 20px 0 0;
+    padding: 0;
+}
+.location-detail-ind .location-address-box > p.view-map-wrap > a{
+    display: inline-block;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #1d5799;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+.location-detail-ind .location-address-box > p.view-map-wrap > a:hover{
+    text-decoration: underline;
+}
+.location-detail-ind .other-details{
+    float: left;
+    width: 100%;
+    margin: 30px 0 0;
+}
+.location-detail-ind .other-details > h4.local-emp, .location-detail-ind .other-details > h4.asso{
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2.5714285714285714285714285714286rem;
+    word-break: initial;
+    word-wrap: break-word;
+    color: #666;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.location-detail-ind .other-details > p.local-emp-year, .location-detail-ind .other-details > p.asso-count{
+    font-size: 2.143em;
+    line-height: 1.2857142857142857142857142857143rem;
+    color: #666;
+    margin: 0 0 26px;
+    padding: 0;
+}
+
+.location-detail-ind .other-details > p.note{
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+@media only screen and (min-width:768px){
+    .location-detail-ind .location-pic > img{
+        width: 100%;
+    }
+    .select-location-bar{
+        visibility: hidden;
+        position: absolute;
+    }
+    .location-tab-list-box{
+        display: block !important;
+        height: 100% !important;
+    }
+    .location-detail-ind > h3.location-title-mobile{
+        display: none;
+    }
+    .location-header-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .main-content{
+        padding: 35px 15px 15px;
+    }
+    .content-col-main{
+        width: 100%;
+        padding: 0;
+    }
+    .content-sidebar{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .location-detail-ind .location-pic{
+        text-align: left;
+    }
+
+    .location-list{
+        width: 100%;
+    }
+    .location-list > li{
+        margin: 0;
+        border-bottom: 1px solid #1274bb;
+    }
+    .location-list.location-list2 > li:last-child{
+        border-bottom: 0;
+    }
+    .location-list > li > a{
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .select-location-bar{
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #333;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .select-location-bar > input[type="text"]{
+        font-size: 16px;
+        line-height: 26px;
+        color: #333;
+        border: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px 25px 4px 10px;
+        cursor: pointer;
+        
+    }
+    .select-location-bar:before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "\f078";
+        font-family: 'FontAwesome';
+        font-size: 17px;
+        line-height: 35px;
+        color: #333;
+    }
+    .select-location-bar > input[type="text"]:focus{
+        outline: 0;
+    }
+
+    .location-tab-list-box{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 99;
+        max-height: 320px;
+        overflow: auto;
+    }
+
+    .location-detail-ind .location-address-box > h3.location-title{
+        display: none;
+    }
+    .location-header-mobile{
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 18px;
+        color: #1d5799;
+        margin: 0 0 20px;
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+
+
