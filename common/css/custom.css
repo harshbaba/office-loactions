@@ -1,33 +1,31 @@
 body{
     background: #f2f2f2;
 }
-.titleBar{padding: 0 15px;}
-.ns-title-wide,
-.ns-title-wide .ns-outer-control {
-    background: #f2f2f2 url(../images/title-bar-bg.jpg) center top no-repeat;
+.full-page{
     float: left;
     width: 100%;
 }
-.ns-outer-control {
-    width: 996px;
-    margin-right: auto;
-    margin-left: auto;
+.layout-titleBar {
+    background: #f2f2f2 url('../images/title-bar-bg.jpg') center top repeat-y;
+    float: left;
+    width: 100%;
 }
+
 .site-container {
     margin-right: auto;
     margin-left: auto;
     max-width: 970px;
-    width: 100%;
+    width: 96%;
 }
 .site-main{
     float: left;
     width: 100%;
-    /* background-color: #fff; */
+    padding-bottom: 20px;
 }
 .ns-title-bar {
     display: table;
-    height: 96px;
-    /* margin-bottom: 30px; */
+    width: 100%;
+    height: 95px;
 }
 
 .ns-title-bar .h1{
@@ -46,14 +44,12 @@ body{
     float: left;
     width: 100%;
     box-sizing: border-box;
-    padding: 60px 15px 15px;
-    background: #fff;
 }
 .content-col-main{
     float: left;
     width: 65%;
     box-sizing: border-box;
-    padding: 0 10px 0 40px;
+    padding: 30px 20px 20px 20px;
 }
 .location-list-outer{
     float: left;
@@ -76,7 +72,7 @@ body{
 .location-list > li{
     float: left;
     width: 100%;
-    margin: 15px 0;
+    margin: 12px 0;
     padding: 0;
 
 }
@@ -101,10 +97,13 @@ body{
 .content-sidebar{
     float: left;
     width: 35%;
+    box-sizing: border-box;
+    padding-left: 30px;
 }
 .sidebar-inner{
     float: left;
     width: 100%;
+    padding-top: 25px;
 }
 
 .sidebar-tab-list{
@@ -131,7 +130,7 @@ body{
 .location-detail-ind .location-pic{
     float: left;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .location-detail-ind .location-pic > img{
     display: inline-block;
@@ -205,10 +204,31 @@ body{
     padding: 0;
 }
 
+.location-header-mobile{
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 18px;
+    color: #1d5799;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 15px;
+}
+.location-detail-ind .location-address-box > h3.location-title{
+    display: none;
+}
+
+.select-location-title-desktop{
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 18px;
+    color: #300;
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 15px;
+}
+
 @media only screen and (min-width:768px){
-    .location-detail-ind .location-pic > img{
-        width: 100%;
-    }
+    
     .select-location-bar{
         visibility: hidden;
         position: absolute;
@@ -217,25 +237,30 @@ body{
         display: block !important;
         height: 100% !important;
     }
-    .location-detail-ind > h3.location-title-mobile{
-        display: none;
+
+    .content-col-main{
+        background: #fff;
+        box-shadow: 0px 2px 15px #019ade;
+        position: relative;
+        top: -25px;
     }
-    .location-header-mobile{
-        display: none;
-    }
+    
+
 }
 
 @media only screen and (max-width:767px){
     .main-content{
-        padding: 35px 15px 15px;
+        padding: 35px 0px 15px;
     }
     .content-col-main{
         width: 100%;
         padding: 0;
+        top:0;
     }
     .content-sidebar{
         width: 100%;
         margin-top: 25px;
+        padding-left: 0;
     }
     .location-detail-ind .location-pic{
         text-align: left;
@@ -263,7 +288,7 @@ body{
         border-bottom: 1px solid #333;
         cursor: pointer;
         position: relative;
-        margin-bottom: 25px;
+        
     }
     .select-location-bar > input[type="text"]{
         font-size: 16px;
@@ -274,6 +299,7 @@ body{
         box-sizing: border-box;
         padding: 4px 25px 4px 10px;
         cursor: pointer;
+        background-color: transparent;
         
     }
     .select-location-bar:before{
@@ -293,28 +319,17 @@ body{
     .location-tab-list-box{
         display: none;
         position: absolute;
-        top: 40px;
+        top: 37px;
         left: 0;
         width: 100%;
         background: #fff;
         z-index: 99;
-        max-height: 320px;
+        max-height: 311px;
         overflow: auto;
+        box-shadow: 0px 2px 15px #019ade;
     }
-
-    .location-detail-ind .location-address-box > h3.location-title{
+       
+    .select-location-title-desktop{
         display: none;
     }
-    .location-header-mobile{
-        text-transform: uppercase;
-        font-weight: normal;
-        line-height: 18px;
-        color: #1d5799;
-        margin: 0 0 20px;
-        padding: 0;
-        font-size: 15px;
-    }
 }
-
-
-
